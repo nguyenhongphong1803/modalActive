@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s linear;
+    
+}
+
+.wrapper.show{
+    
+    visibility:visible;
+    opacity: 1;
+    
+}
+
+
+#modal {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    background-color: #accbe1;
+    padding: 80px;
+    border-radius: 50px;
+    position: relative;
+    /* visibility: hidden;
+    opacity: 0;
+    transition: all 0.25s linear; */
+    
+    
+}
+
+/* #modal .show {
+    visibility:visible;
+    opacity: 1;
+} */
+
+.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 30px;
+    font-size: 30px;
+    
+}
+.icon:hover {
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 29px;
+}
+
+.para {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btnParent {
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 80px   ;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+}
+
+.confirm {
+    background-color: blue;
+}
